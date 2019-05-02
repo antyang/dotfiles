@@ -12,4 +12,7 @@ function vs {
         open -a "Visual Studio Code"
     else
         local argPath="$1"
-"~/.zshrc" 101L, 3220C
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}
