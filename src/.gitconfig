@@ -1,0 +1,21 @@
+[user]
+    name = Antony Yang
+    email = mrant0ny@gmail.com
+[github]
+    user = antyang
+[alias]
+    a = add
+    cm = commit
+    s = status
+    d = diff
+    l = log
+    br = branch
+    co = checkout
+    pom = push origin master
+[credential]
+    helper = osxkeychain
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
