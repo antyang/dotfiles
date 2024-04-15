@@ -1,4 +1,4 @@
-	# CLI Utilities
+# CLI Utilities
 tap 'homebrew/bundle'
 brew 'wget'
 
